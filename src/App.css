@@ -1,0 +1,42 @@
+:root {
+  --primary: darkcyan;
+  --secondary: white;
+
+  
+}
+
+
+
+
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    cursor: pointer;
+  }
+  
+  .paginationBttns a:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
+  }
+  
+  .paginationActive a {
+    color: var(--secondary);
+    background-color: var(--primary);
+  }
+  
+  .paginationDisabled a {
+    /*color: rgba(128, 128, 128, 0);
+    background-color: rgba(128, 128, 128, 0);*/
+    display: none;
+  }

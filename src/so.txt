@@ -1,0 +1,76 @@
+
+
+/*pokemons.map((pokemon, id) => (
+          <CardItem key={pokemon.name} {...pokemon} />
+        ))*/
+
+
+
+
+const Button = styled.button`
+  background: transparent;
+  border-radius: 3psx;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  margin: 0.5em 1em;
+  padding: 0.25em 1em;
+  
+
+  ${(props) =>
+    props.primary &&
+    css`
+      background: palevioletred;
+      color: white;
+    `}
+`;
+
+const Container = styled.div`
+  text-align: center;
+`;
+
+
+
+
+
+
+
+
+
+
+
+
+{pokemons.map((pokemon) => (
+            <CardItem key={pokemon.id} {...pokemon} />
+          ))}
+
+<img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`} alt="" />
+
+/* 
+  function fetchPokemonData(pokemon) {
+   let url = pokemon.url;
+      fetch(url)
+      .then((response) => response.json())
+      .then(function (pokeData) {
+        console.log(pokeData);
+        let img = pokeData.sprites.front_default
+        //console.log("🚀 ~ file: CardItem.jsx ~ line 11 ~ img ", img )
+        //console.log("🚀 ~ file: CardItem.jsx ~ line 8 ~ pokeData", pokeData)
+        return pokeData;
+      });
+    
+  }
+  const [data ,setData] = useState([]);
+
+  useEffect((pokemon) => {
+   API.getAllPokemons()
+      .then((data) => setPokemons(data.results))
+      .catch(console.log);
+      fetchPokemonData(pokemon)
+      .then((data) => {
+        console.log("🚀 ~ file: CardItem.jsx ~ line 25 ~ useEffect ~ data", data)
+        setData(data)
+      })
+      .catch(console.log);
+  }, []);
+
+*/
