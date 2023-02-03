@@ -4,7 +4,7 @@
           <CardItem key={pokemon.name} {...pokemon} />
         ))*/
 
-
+ "homepage": "https://sergioere.github.io/react-pokedex",
 
 
 const Button = styled.button`
