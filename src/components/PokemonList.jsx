@@ -119,7 +119,7 @@ function PokemonList() {
       <Header>
         <div className="logo">
           <img
-            src="/src/assets/pokedex.png"
+            src="src/assets/pokedex.png"
             alt="pokedex"
             className="img-banner"
             width="30px"
